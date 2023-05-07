@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+}
+
+.btn {
+    background-color: #b43492;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    bottom: 0px;
+}
+
+
+/* -------------------------------------- */
+
+
+/* caert styls */
+
+.cart-styls {
+    padding: 2rem;
+}
+
+.main-color {
+    background-color: #B1B2FF;
+}
+
+.landing {
+    height: 100vh;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.common-padding {
+    margin-top: 5rem;
+}
+
+.item-holder {
+    padding: 10px;
+}
+
+
+/* cart items wrpper styles */
+
+.item-inner-wrapper {
+    border: 1px solid #B1B2FF;
+    border-radius: 0.5rem;
+    background-color: #e7e7e7;
+    -webkit-box-shadow: -1px 10px 41px -7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 10px 41px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 10px 41px -7px rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer */
+
+.icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: aliceblue;
+}
+
+.contact-area {
+    border-bottom: 1px solid #353c46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #131313;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social>ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #000000;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #bc1820;
+    color: #bc1820;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+.footer {
+    padding-top: 3rem;
+}
+
+
+/* .contact-area {
+  background: pink;
+  color: #000000;
+  font-weight: 600;
+} */
+
+
+/* ------------------------------------------- */
+
+
+/* btn styles */

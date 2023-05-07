@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ruby Gifts | Online Gifting Site</title>
+    <link rel="icon" type="image/x-icon" href=" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/homeandcart.css">
+    
+    <script src="js/cart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- meka cart eka pop up wena BS modal eka -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Gift Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cart-styls">
+
+
+                    <!-- content cat and modal -->
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-secondary main-color" type="button"><a href="checkout.html">Check out</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg main-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="Images/logo.png" width="60px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Gifts.html">Gifts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn cart-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Cart
+                              </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- page content wrapper -->
+    <div class="container-fluid">
+        <!-- carousel -->
+        <section class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Images/other/click3.jpg" height="800px" width="100px" alt="First slide" style="background-size: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-center"> Celebrate Your Lovely Days Of Life</h1>
+                            <h4 class="justify-content-md-center "> We cover every loving moment of your loved ones<br> To make sure your memories stay with them in
+                                <br> The form of a gift which is close to the heart<br> Just as colors of ruby does and just beautiful like ruby.</h5>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/slider/girl-dream-catcher.jpg" height="600px" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-center"> Celebrate Your Lovely Days Of Life</h1>
+                            <h4 class="justify-content-md-center "> We cover every loving moment of your loved ones<br> To make sure your memories stay with them in
+                                <br> The form of a gift which is close to the heart<br> Just as colors of ruby does and just beautiful like ruby.</h5>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slider/golden-gift-bow.jpg" height="600px" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-center"> Celebrate Your Lovely Days Of Life</h1>
+                            <h4 class="justify-content-md-center "> We cover every loving moment of your loved ones<br> To make sure your memories stay with them in
+                                <br> The form of a gift which is close to the heart<br> Just as colors of ruby does and just beautiful like ruby.</h5>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="common-padding">
+            <h1 class="text-center">FEATURED GIFTS</h1>
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Dream Catcher</span>
+                                <img class="shop-item-image" src="Images/other/Dreamcatcher-Feather-Pendant-National-Handmade-Beautiful-Dream-Catcher-Wall-Hanging-Decoration-Gift-For-Girls-Room-Party.jpg_Q90.jpg_.jfif">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1100.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Cake</span>
+                                <img class="shop-item-image" src="Images/Products/cake/pexels-photo-10311447.jpeg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1200.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Wind Chimes</span>
+                                <img class="shop-item-image" src="Images\other\81zbHl1bqgL._AC_SL1500_.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1350.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Flower</span>
+                                <img class="shop-item-image" src="Images\Products\flowers\pexels-photo-9925082.webp">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1000.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Plant</span>
+                                <img class="shop-item-image" src="Images/Products/plants/pexels-photo-1856430.webp">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1600.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-holder col-lg-3">
+                        <div class="item-inner-wrapper">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Teddy</span>
+                                <img class="shop-item-image" src="Images/Products/taddys/pexels-photo-11698746.jpeg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">1500.00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- cart  -->
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- footer -->
+        <section class="main-color footer">
+            <div class="contact-area" id="contact">
+                <div class="container-fluid">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="contact-content text-center">
+                                <a href="#"><img src="images/logo.png" alt="logo"></a>
+                                <p>The online gifting gem that covers all lovely moments of your lives</p>
+                                <div class="contact-social">
+                                    <ul class="icons">
+                                        <li>
+                                            <a class="hover-target " href="">
+                                                <h5>tw</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="hover-target" href="">
+                                                <h5>f</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="hover-target" href="">
+                                                <h5>in</h5>
+                                                </i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p style="margin-top: 2rem;">Copyright &copy; 2022 group5 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--scrps jq and other-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

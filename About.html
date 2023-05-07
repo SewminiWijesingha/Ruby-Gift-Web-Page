@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> About Us</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/About.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/homeandcart.css">
+        <script src="js/cart.js"></script>
+
+</head>
+
+<body>
+
+  <!-- meka cart eka pop up wena BS modal eka -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Gift Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cart-styls">
+
+
+                    <!-- content cat and modal -->
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-secondary main-color" type="button"><a href="checkout.html">Check out</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- navbar -->
+  <section>
+    <nav class="navbar navbar-expand-lg main-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="Images/logo.png" width="60px" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Gifts.html">Gifts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn cart-btn"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Cart
+                </button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="About.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
+            </li>
+
+
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+    <br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title">
+                    <h2>ABOUT RUBY GIFTS</h2><br>
+                </div>
+                <div class="content"></div>
+                <p> Ruby Gifts is a leading gifting site in Sri Lanka<br> Which provides you the most lovable
+                    gift items as you wish<br> For a bearable and fair price.
+                <div>
+                    Consists of huge range of fancy gift items that you are looking for with the hope of
+                    surprising your loved ones
+                </div>
+                </p><br>
+
+
+                <p> CONTACT US:</p><br>
+                <ul>
+                    <li> Mobile: +94 778906411</li>
+                    <li> Facebook: Ruby Gifts</li>
+                    <li> Instagram: RubyGifts</li>
+                    <li> Gmail: ruby.gifts@gmail.com</li>
+                </ul>
+            </div>
+            <img class=" col" src="images/other/Ruby Gifts Name Meaning.jpg" alt="">
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <div class="contact-area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#"><img src="images/logo.png" alt="logo"></a>
+                        <p>The online gifting gem that covers all lovely moments of your lives</p>
+                        <div class="contact-social">
+                            <ul class="icons">
+                                <li><a class="hover-target " href="">
+                                        <h5>tw</h5>
+                                    </a></li>
+                                <li><a class="hover-target" href="">
+                                        <h5>f</h5>
+                                    </a></li>
+                                <li><a class="hover-target" href="">
+                                        <h5>in</h5></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <p><center>Copyright &copy; 2022 group5 All Rights Reserved.</center></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
